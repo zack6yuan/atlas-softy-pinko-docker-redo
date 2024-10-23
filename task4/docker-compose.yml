@@ -4,14 +4,12 @@ services:
       context: ./back-end
       dockerfile: dockerfile
     image: task4:back-end
-    ports: "5252:5252"
-    
+    ports: "5252:5252" # Error, must be a list
+
   front-end:
     build:
       context: ./front-end
       dockerfile: dockerfile
     image: task4:front-end
-    ports: "9000:9000"
+    ports: "9000:9000" # Error, must be a list.
     depends_on: back-end
-
-  
