@@ -4,7 +4,7 @@ services:
       context: ./front-end
       dockerfile: dockerfile
     image:
-      task4-front-end
+      task4:front-end
     ports:
       - "9000:9000"
     depends_on:
@@ -15,6 +15,6 @@ services:
       context: ./back-end
       dockerfile: dockerfile
     image:
-      task4-back-end
+      task4:back-end
     ports:
       -  "5252:5252"
